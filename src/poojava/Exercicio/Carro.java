@@ -1,4 +1,4 @@
-package poojava.Exercicio;
+package poojava.exercicio;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

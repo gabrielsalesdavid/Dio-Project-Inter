@@ -1,4 +1,4 @@
-package poojava.Exercicio.interface;
+package poojava.exercicio.interfac;
 
 public class Calculadora implements IOperacaoMatematica {
 

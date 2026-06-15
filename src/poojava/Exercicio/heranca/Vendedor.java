@@ -1,4 +1,4 @@
-package poojava.Exercicio.heranca;
+package poojava.exercicio.heranca;
 
 public class Vendedor extends Funcionario {
     private double comissao;

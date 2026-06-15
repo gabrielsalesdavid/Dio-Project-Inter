@@ -1,4 +1,4 @@
-package poojava.Exercicio.heranca;
+package poojava.exercicio.heranca;
 
 public class Main {
     
