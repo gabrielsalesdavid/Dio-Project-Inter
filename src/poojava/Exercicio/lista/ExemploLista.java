@@ -1,9 +1,9 @@
 package poojava.exercicio.lista;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
 
 public class ExemploLista {
 
@@ -59,5 +59,32 @@ public class ExemploLista {
             soma += next;
         }
         System.out.println(soma);
+
+        System.out.println("Exiba a média das notas: " + (soma / notas.size()));
+
+        System.out.println("Remova a nota 0.0: ");
+        notas.remove(0.0);
+        System.out.println(notas.toString());
+
+        System.out.println("Remova a nota da posição 0: ");
+        notas.remove(0);
+        System.out.println(notas.toString());
+
+        System.out.println("Remova as notas menores que 7.0 e exiba a lista: ");
+        Iterator<Double> iterator1 = notas.iterator();
+        while (iterator1.hasNext()) {
+            Double next = iterator1.next();
+            if (next < 7.0) {
+                iterator1.remove();
+            }
+        }
+        System.out.println(notas.toString());
+
+        System.out.println("Apague toda a lista: ");
+        notas.clear();
+        System.out.println(notas.toString());
+
+        System.out.println("Confira se a lista está vazia: " + notas.isEmpty());
+
     }
 }
