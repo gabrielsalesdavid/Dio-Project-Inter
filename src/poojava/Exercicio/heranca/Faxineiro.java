@@ -1,5 +1,7 @@
 package poojava.exercicio.heranca;
 
+import poojava.exercicio.heranca.Funcionario;
+
 public class Faxineiro extends Funcionario {
     private String turno;
 

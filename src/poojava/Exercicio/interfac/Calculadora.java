@@ -1,5 +1,8 @@
 package poojava.exercicio.interfac;
 
+import poojava.exercicio.interfac.IOperacaoMatematica;
+import poojava.exercicio.interfac.Calculadora;
+
 public class Calculadora implements IOperacaoMatematica {
 
     @Override

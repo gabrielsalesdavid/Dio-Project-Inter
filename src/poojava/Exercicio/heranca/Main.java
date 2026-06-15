@@ -1,5 +1,10 @@
 package poojava.exercicio.heranca;
 
+import poojava.exercicio.heranca.Funcionario;
+import poojava.exercicio.heranca.Gerente;
+import poojava.exercicio.heranca.Vendedor;
+import poojava.exercicio.heranca.Faxineiro;
+
 public class Main {
     
     public static void main(String[] args) {

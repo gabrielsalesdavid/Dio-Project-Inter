@@ -2,6 +2,8 @@ package poojava.exercicio.lista;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
+import java.util.Iterator;
 
 public class ExemploLista {
 
@@ -44,7 +46,18 @@ public class ExemploLista {
         System.out.println("Exiba a quantidade de notas: " + notas.size());
 
         System.out.println("Exiba a menor nota: " + notas.stream().min(Double::compare).get());
+        System.out.println("Exiba a menor nota: " + Collections.min(notas, Double::compare));
 
         System.out.println("Exiba a maior nota: " + notas.stream().max(Double::compare).get());
+        System.out.println("Exiba a maior nota: " + Collections.max(notas, Double::compare));
+
+        System.out.println("Exiba a soma dos valores: ");
+        Iterator<Double> iterator = notas.iterator();
+        Double soma = 0.0;
+        while (iterator.hasNext()) {
+            Double next = iterator.next();
+            soma += next;
+        }
+        System.out.println(soma);
     }
 }
