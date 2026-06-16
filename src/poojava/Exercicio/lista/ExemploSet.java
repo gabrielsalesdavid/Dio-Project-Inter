@@ -83,5 +83,49 @@ public class ExemploSet {
         System.out.println("Notas após remoção: " + notas);
         System.out.println("Removendo a nota 10.0: " + notas.remove(10.0));
         System.out.println("Notas após remoção: " + notas);
+
+        System.out.println("--\tOrdem Aleatória\t--");
+        Set<Serie> series = new HashSet<>() {{
+            add(new Serie("Breaking Bad", "Drama", 50));
+            add(new Serie("Game of Thrones", "Fantasia", 60));
+            add(new Serie("Stranger Things", "Ficção Científica", 45));
+        }};
+        for (Serie serie : series) {
+            System.out.println(serie);
+        }
+        System.out.println("Exibindo as séries na ordem de inserção: " + series);
+    }
+
+    public class Serie {
+        private String nome;
+        private String genero;
+        private Integer tempoEpisodio;
+
+        public Serie(String nome, String genero, Integer tempoEpisodio) {
+            this.nome = nome;
+            this.genero = genero;
+            this.tempoEpisodio = tempoEpisodio;
+        }
+
+        public String getNome() {
+            return nome;
+        }
+
+        public String getGenero() {
+            return genero;
+        }
+
+        public Integer getTempoEpisodio() {
+            return tempoEpisodio;
+        }
+
+        @Override
+        public String toString() {
+            return "{" +
+                    "nome='" + nome + '\'' +
+                    ", genero='" + genero + '\'' +
+                    ", tempoEpisodio=" + tempoEpisodio +
+                    '}';
+        }
     }
 }
